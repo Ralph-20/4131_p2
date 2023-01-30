@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyForm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- This is the header  -->
+    <header>
+        <nav>
+          <ul class="navbar">
+            <li class="navbarli"><a href="AboutMe.html">About Me</a></li>
+            <li class="navbarli"><a href="MySchedule.html">Schedule</a></li>
+          </ul>
+        </nav>
+    </header>
+    
+
+    <form method="get" action = "https://www.cs.umn.edu">
+		
+        <!-- hidden inputs below - no visual inputs that will -->
+        <!-- be submitted when the form is submitted -->
+        <input type = "hidden" name = "recipient"
+            value = "challou@cs.umn.edu">
+        <input type = "hidden" name = "subject"
+            value = "Feedback Form">
+        <input type = "hidden" name = "redirect"
+            value = "http://www.cs.umn.edu/">
+        
+        <!-- input type = "text" inserts a text field -->
+        <p>
+            <label>Event:
+            <input name = "event" type = "text" size = "25"
+                maxlength = "30" required >
+            </label>
+        </p>
+        
+        <p>   
+            <!-- Going to have to change this to a list of options with days of the week -->
+            <label> Day of Week:
+                <input name = "datetime-local" type = "date"  
+                placeholder = "Sunday" required >  
+            </label>
+        </p>
+
+        <p>
+            <label> Start time:
+                <input name = "start" type = "time" required >        
+            </label>
+        </p>
+
+        <p>
+            <label> End time:
+                <input name = "end" type = "time" required >        
+            </label>
+        </p>
+        <p>
+            <label> Phone:
+                <input name = "phone" type = "tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7889" required >        
+            </label>
+        </p>
+
+        <p>
+            <label> Location:
+                <input name = "location" type = "text" required >        
+            </label>
+        </p>
+
+        <p>
+            <label> Extra info:
+                <input name = "extraInfo" type = "text" required >        
+            </label>
+        </p>
+
+        <p>
+            <label> Enter URL for the extra info:
+                <input name = "url" type = "url" required >        
+            </label>
+        </p>
+    
+        <!-- submit and reset insert buttons for submitting -->
+        <!-- and clearing the form's contents				-->
+        <p>
+        <input type = "submit" value = "Submit" >
+        <!-- <input type = "reset" value = "Clear" > -->
+        </p>
+
+      
+    
+    </form>
+
+
+    
+</body>
+</html>
