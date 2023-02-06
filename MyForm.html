@@ -21,7 +21,7 @@
     </header>
     
     <div class="wrapper">
-        <form method="get" action = "https://www.cs.umn.edu">
+        <form method="post" action = "https://www-users.cselabs.umn.edu/~cuixx327/a2.php">
             
             <!-- hidden inputs below - no visual inputs that will -->
             <!-- be submitted when the form is submitted -->
@@ -34,53 +34,45 @@
             
             <!-- input type = "text" inserts a text field -->
             <p>
-                <label>Event:
-                <input name = "event" type = "text" size = "25"
+                <label>Event:</label>
+                <input name = "event" type = "text" size = "25" id="event"
                     maxlength = "30" required >
-                </label>
+                
             </p>
             
             <p>   
                 <!-- Going to have to change this to a list of options with days of the week -->
-                <label> Day of Week:
-                    <input name = "datetime-local" type = "date"  
-                    placeholder = "Sunday" required >  
-                </label>
+                <label> Day of Week:</label>
+                <input name = "datetime-local" type = "date"  id="day" placeholder = "Sunday" required > 
             </p>
 
             <p>
-                <label> Start time:
-                    <input name = "start" type = "time" required >        
-                </label>
+                <label> Start time:</label>
+                <input name = "start" type = "time" required  id="start">        
             </p>
 
             <p>
-                <label> End time:
-                    <input name = "end" type = "time" required >        
-                </label>
+                <label> End time:</label>
+                <input name = "end" type = "time" required id="end">        
             </p>
             <p>
-                <label> Phone:
-                    <input name = "phone" type = "tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7889" required >        
-                </label>
+                <label> Phone:</label>
+                <input name = "phone" type = "tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7889" id="phone" required > 
             </p>
 
             <p>
-                <label> Location:
-                    <input name = "location" type = "text" required >        
-                </label>
+                <label> Location:</label>
+                <input name = "location" type = "text" required id="location">        
             </p>
 
             <p>
-                <label> Extra info:
-                    <input name = "extraInfo" type = "text" required >        
-                </label>
+                <label> Extra info:</label>
+                <input name = "extraInfo" type = "text" required id="extra">        
             </p>
 
             <p>
-                <label> Enter URL for the extra info:
-                    <input name = "url" type = "url" required >        
-                </label>
+                <label> Enter URL for the extra info:</label>
+                <input name = "url" type = "url" required id="url" >        
             </p>
         
             <!-- submit and reset insert buttons for submitting -->
