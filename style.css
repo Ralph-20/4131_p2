@@ -20,7 +20,7 @@ body{
   align-items: center;
   justify-items: center;
 }
-img {
+#pfp {
   max-width: 50%;
   max-height: 50%;
 }
@@ -81,6 +81,34 @@ table {
 
   tr:nth-child(odd) {
     background-color: white;
+  }
+
+  /* schedule tables images */
+    
+    tr img {
+        display: none; 
+        
+      }
+
+    tr:hover img {  
+      display: block;
+      height :30px;
+      width : 30px;
+    }
+
+
+  #big-images {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  #big {
+    margin: auto;
+    max-width: 50%;
+    width: 600px;
+    max-height: 50%;
+    height: 500px;
   }
 
 
