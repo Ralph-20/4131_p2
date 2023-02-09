@@ -12,19 +12,39 @@ body{
   margin: 50px;
 }
 
+/* about me Date calc */
 
-/* image */
+#datecalc {
+  width: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 2%;
+  border-style:solid;
+  border-color: greenyellow;
+}
 
-.imgwrpr {
+/* about me image */
+
+.wrapper {
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-style:solid;
+  border-color: black;
 }
 #pfp {
   max-width: 50%;
   max-height: 50%;
+  height: 600px;
 }
 
+
+/* yt video */
+
+#insta-container {
+  margin: 5%;
+}
 
 /* nav stuff */
 
@@ -65,7 +85,7 @@ table {
     
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
   }
   
@@ -99,13 +119,13 @@ table {
 
   #big-images {
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 0 auto;
+    /* margin-top: 5%;
+    margin-bottom: 5%; */
   }
 
   #big {
-    margin: auto;
-    max-width: 50%;
+    max-width: 100%;
     width: 600px;
     max-height: 50%;
     height: 500px;
@@ -113,10 +133,6 @@ table {
 
 
 /* Form */
-
-.wrapper {
-  display: flex;
-}
 
 
 /* submit button */
@@ -132,9 +148,9 @@ input[type=submit] {
 }
 
 
-input[type=text], select {
-  box-sizing: border-box;
-  width: 250px;
+input, select {
+ 
+  width: 50%;
   padding: 10px;
   border: 1px solid #aaa;
   border-radius: 4px;
@@ -142,20 +158,22 @@ input[type=text], select {
 
 label{
   display: inline-block;
-  text-align: left;
+  width: 40%;
   
 }
 
 
 
 form{
-  width: 50%;
+  padding: 20px;
+  max-width: 40%;
+  width: 500px;
   box-sizing: border-box;
   margin: 50px auto;
-  align-items: center;
-  justify-content: center;
   background-color: white;
 }
+
+
 /* 
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
